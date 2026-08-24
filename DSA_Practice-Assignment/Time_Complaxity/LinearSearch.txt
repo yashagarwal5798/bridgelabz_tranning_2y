@@ -1,0 +1,37 @@
+1. Best Case
+   Target = 8
+
+   Steps:
+   1. Linear search starts from the first element.
+   2. Compare 8 with the target 8.
+   3. The target is found in the first comparison.
+   4. No other elements need to be checked.
+   Time Complexity = O(1)
+
+2. Worst Case
+   Target = 0
+
+   Steps:
+   1. Start searching from the first element.
+   2. Compare 8 with 0 → Not equal.
+   3. Compare 61 with 0 → Not equal.
+   4. Compare 2 with 0 → Not equal.
+   5. Compare 3 with 0 → Not equal.
+   6. Compare 4 with 0 → Not equal.
+   7. Compare 0 with 0 → Target found.
+   Time Complexity = O(n)
+
+3. Average Case
+
+   Steps:
+
+   1. The target can be located at any position in the array.
+   2. If the target is at position 1, only 1 comparison is required.
+   3. If it is at position 2, 2 comparisons are required.
+   4. This continues until position n, which requires n comparisons.
+   5. The average number of comparisons is:
+   (1 + 2 + 3 + ... + n) / n
+   = (n + 1) / 2
+   6. Since (n + 1) / 2 grows proportionally with n, constants are ignored in Big-O notation.
+
+   Average Case Time Complexity: O(n)

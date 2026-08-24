@@ -1,0 +1,34 @@
+Sample Sorted Array: {0, 2, 3, 4, 8, 61}
+Target: 4
+
+Step 1:
+ 1. Search range = indices 0 to 5
+ 2. mid = 2
+ 3. arr[2] = 3
+ 4. Since 3 < 4, search the right half.
+ 5. New range = indices 3 to 5.
+
+Step 2:
+ 1. Search range = indices 3 to 5
+ 2. mid = 4
+ 3. arr[4] = 8
+ 4. Since 8 > 4, search the left half.
+ 5. New range = index 3.
+
+Step 3:
+ 1. mid = 3
+ 2. arr[3] = 4
+ 3. Target found.
+
+Total comparisons = 3.
+
+For an array of size N, Binary Search divides the search
+space by 2 after every iteration.
+
+After k iterations:
+N / 2^k = 1
+
+Therefore:
+ k = log2(N)
+ Worst Case Time Complexity = O(log N)
+ Space Complexity = O(1) for iterative Binary Search.
